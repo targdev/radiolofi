@@ -8,11 +8,11 @@
 
 /* style */
  #main {
-     background-image: url("/assets/background/wallpaper-edit.png");
-     background-attachment: fixed;
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
+    background-image: url("/assets/background/wallpaper-edit.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
      display: flex;
      align-items: center;
@@ -20,6 +20,7 @@
 
      height: 100vh;
  }
+
 
  #player {
     width: 90%;
