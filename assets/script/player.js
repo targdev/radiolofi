@@ -1,20 +1,28 @@
 
 window.player = {
-    cover: document.querySelector('.card-image'),
     title: document.querySelector('.card-content h5'),
     artist: document.querySelector('.artist'),
+    cover: document.querySelector('.card-image'),
     audio: document.querySelector('audio'),
 
     audioData: audios,
     currentAudio: {},
+    currentPlaying: 0,
   
     start() {
 
-      this.currentAudio = this.audioData[0]
+      this.currentAudio = this.audioData[this.currentPlaying];
 
-      this.cover.style.background = `url(${this.currentAudio.cover}) no-repeat center center / cover`;
       this.title.innerText = this.currentAudio.title;
       this.artist.innerText = this.currentAudio.artist;
-      this.audio.src = this.currentAudio.file;
+      this.cover.style.background = `url(${path(this.currentAudio.cover)}) no-repeat center center / cover`;
+      this.audio.src = path(this.currentAudio.file);
+
+      this.audio.addEventListener("ended", () => {
+        this.currentPlaying++
+        this.audio.src = path(this.audioData[this.currentPlaying].file);
+        this.audio.play();
+      })
     }
+
   }
