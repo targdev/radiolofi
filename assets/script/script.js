@@ -1,3 +1,3 @@
 window.addEventListener("load", () => {
-  player.start();
+  player.start()
 })
