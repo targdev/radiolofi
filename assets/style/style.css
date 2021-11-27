@@ -4,6 +4,8 @@
 /* variables */
 :root {
     --white: rgb(238, 238, 238);
+    --blue: rgb(163, 236, 243);
+    --blue-strong: rgb(29, 58, 94)
 }
 
 /* style */
@@ -68,3 +70,22 @@ h4 {
       width: 100%;
       margin-top: 10px;
   }
+
+  #play-pause {
+    background-color: var(--blue-strong);
+  }
+
+  #vol {
+     transform: translateY(4px);
+      color: var(--blue-strong);
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    background-color: var(--blue-strong);
+      }
+      input[type="range"]::-moz-range-thumb {
+        background-color: var(--blue-strong);
+          }
+          input[type="range"]::-ms-thumb {
+            background-color: var(--blue-strong);
+              }
