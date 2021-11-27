@@ -1,6 +1,5 @@
-window.audios = [
-  {
-    title: "stars",
+export default [ 
+  { title: "stars",
     artist: "lofi type beat",
     cover: "stars.jpg",
     file: "stars.mp3"
