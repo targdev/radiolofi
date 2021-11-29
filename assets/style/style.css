@@ -56,10 +56,6 @@ h4 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
-  h4 .attributes {
-      margin: 0 3px 0 0;
-  }
  
   .card-image {
     background: url(https://placehold.it/500) center no-repeat cover;
@@ -71,20 +67,23 @@ h4 {
       margin-top: 10px;
   }
 
-  #play-pause {
-    background-color: var(--blue-strong);
-  }
 
   #buttons-playlist {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin: -16px 0 0 0;
+    margin: -29px 0 0 0;
   }
 
   #buttons-playlist a {
-    background-color: var(--blue-strong);
+    background: -webkit-linear-gradient(rgb(35, 197, 197), rgb(161, 59, 187));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card-content h5 {
+    margin: -15px 0 0 0;
   }
 
   #mute {
