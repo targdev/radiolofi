@@ -10,7 +10,6 @@ export default {
   
     start() {
       elements.set.call(this);
-
       this.update();
     },
 
@@ -28,6 +27,25 @@ export default {
 
     togglePlayPause() {
       this.isPlaying ? this.pause() : this.play();
+    },
+
+    nextSong() {
+      this.pause();
+      this.currentPlaying++
+      this.restart();
+      this.update();
+      this.play();
+    },
+
+    previousSong() {
+      if(this.currentPlaying == 0) {
+        this.currentPlaying = this.audioData.length
+      }
+      this.pause();
+      this.currentPlaying--
+      this.restart();
+      this.update();
+      this.play();
     },
 
     timeUpdate() {
