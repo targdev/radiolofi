@@ -5,7 +5,8 @@
 :root {
     --white: rgb(238, 238, 238);
     --blue: rgb(163, 236, 243);
-    --blue-strong: rgb(29, 58, 94)
+    --black: rgb(0, 0, 0);
+    --rainbow: linear-gradient(rgb(35, 197, 197), rgb(161, 59, 187));
 }
 
 /* style */
@@ -51,10 +52,6 @@ h4 {
 
     font-size: 20px;
     font-weight: bold;
-    
-    background: -webkit-linear-gradient(rgb(35, 197, 197), rgb(161, 59, 187));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
  
   .card-image {
@@ -67,36 +64,36 @@ h4 {
       margin-top: 10px;
   }
 
-
   #buttons-playlist {
     display: flex;
     justify-content: center;
     align-items: center;
 
     margin: -29px 0 0 0;
+    
   }
 
   #buttons-playlist a {
-    background: -webkit-linear-gradient(rgb(35, 197, 197), rgb(161, 59, 187));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: var(--black);
+
+    margin: 0 5px 15px 5px;
   }
 
   .card-content h5 {
-    margin: -15px 0 0 0;
+    margin: -16px 0 0 0;
   }
 
   #mute {
       transform: translateY(4px);
-      color: var(--blue-strong);
+      color: var(--black);
   }
 
   input[type="range"]::-webkit-slider-thumb {
-    background-color: var(--blue-strong);
+    background: var(--black);
       }
       input[type="range"]::-moz-range-thumb {
-        background-color: var(--blue-strong);
+        background: var(--black);
           }
           input[type="range"]::-ms-thumb {
-            background-color: var(--blue-strong);
+            background: var(--black);
               }
