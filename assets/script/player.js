@@ -1,5 +1,5 @@
 import audios from "./data_base.js"
-import { path } from "./utilites.js"
+import { path, secondsToMinutes } from "./utilites.js"
 import elements from "./player_elements.js"
 
 export default {
@@ -12,7 +12,6 @@ export default {
       elements.set.call(this);
 
       this.update();
-      this.audio.onended = () => this.next();
     },
 
     play() {
@@ -29,6 +28,11 @@ export default {
 
     togglePlayPause() {
       this.isPlaying ? this.pause() : this.play();
+    },
+
+    timeUpdate() {
+      this.currentDuration.innerText = secondsToMinutes(this.audio.currentTime);
+      this.seekBar.value = this.audio.currentTime
     },
 
     setSeek(value) {
