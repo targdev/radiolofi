@@ -75,8 +75,8 @@ h4 {
     background-color: var(--blue-strong);
   }
 
-  #vol {
-     transform: translateY(4px);
+  #mute {
+      transform: translateY(4px);
       color: var(--blue-strong);
   }
 
