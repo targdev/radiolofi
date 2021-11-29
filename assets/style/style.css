@@ -75,6 +75,18 @@ h4 {
     background-color: var(--blue-strong);
   }
 
+  #buttons-playlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: -16px 0 0 0;
+  }
+
+  #buttons-playlist a {
+    background-color: var(--blue-strong);
+  }
+
   #mute {
       transform: translateY(4px);
       color: var(--blue-strong);
